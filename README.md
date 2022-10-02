@@ -2,30 +2,30 @@
 
 ## Learning Goals
 
-- Learning Goal 1
-- Learning Goal 2
+- Practice reading and writing a text file using the `BufferedReader` class and
+  the `BufferedWriter` class.
 
 ## Introduction
 
-A 1-2 sentence summary of what will be covered.
+Given the `GroceryListDriver` class again, modify the program to use the
+`BufferedReader` and `BufferedWriter` classes to read and write a text file.
 
-## Instructions
+Reuse the last lab to modify the methods you already wrote to use the new
+classes we just learned about.
 
-Walk the student through any setup required to run the lesson (i.e.
-`npm install` and `npm start`).
+To implement the reading and writing of a text file, consider the following
+instructions and tips:
 
-## Deliverables
-
-List each of the deliverables the student must complete in order to finish the
-lab. Provide as much context as possible, including instructions on how to run
-the tests and other means of validating successful completion of deliverables.
-
-## Conclusion
-
-A short one or two paragraph summary of the contents of the lessons, recapping
-the learning goals.
-
-## Resources
-
-- [Resource Link 1](example.com)
-- [Resource Link 2](example.com)
+- Modify the `GroceryListDriver` class.
+    - Rewrite the method to write to a text file.
+        - Use a `BufferedWriter` object to write out a grocery list.
+        - Each item in the list should be on its own new line.
+        - Refer back to the BufferedReader and BufferedWriter lesson.
+    - Rewrite the method to read a text file line-by-line.
+        - Use a `BufferedReader` object to read from the text file.
+        - Return a `String` to print out to the console the list of groceries.
+        - Refer back to the BufferedReader and BufferedWriter lesson.
+- When running the `GroceryListDriver` class, pass in a file named
+  `grocery-list.txt`.
+- Remove the `@Disabled` annotation from the unit tests and ensure that the
+  tests pass successfully. Refactor as needed.
